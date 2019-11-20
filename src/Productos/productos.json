@@ -1,0 +1,34 @@
+{
+ "productos": [
+   {
+     "nombre": "agua",
+     "descripcion": "Agua en botella, precio $10",
+     "ima": "./Imagenes/agua.png"
+   },
+   {
+     "nombre": "Yogurt",
+     "descripcion": "Yogurt alpina, precio $40",
+     "ima": "./Imagenes/panela.png"
+   },
+   {
+     "nombre": "arequipe alpina",
+     "descripcion": "arequipe en frasco, precio $37",
+     "ima": "./Imagenes/arequipe.png"
+   },
+   {
+     "nombre": "mantequilla Rama",
+     "descripcion": "mantequilla en recipiente, precio $13",
+     "ima": "./Imagenes/mantequilla.png"
+   },
+   {
+     "nombre": "Carnes frías",
+     "descripcion": "Paquetes de carnes, precio 20$",
+     "ima": "./Imagenes/carne.png"
+   },
+   {
+     "nombre": "Botella de vino",
+     "descripcion": "Vino añejo, precio $45",
+     "ima": "./Imagenes/vino-tinto.png"
+   }
+ ]
+}
