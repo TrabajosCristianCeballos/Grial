@@ -1,3 +1,17 @@
+## Grial, telemática, universidad Eafit, 2019-2
+
+El siguiente proyecto consiste en la creación de una aplicación web que permita encuestar productos y almacenar la información de los usuarios y sus opiniones frente a estos productos.
+
+Se implementó una metodología ágil enfocada en un modelo mvc donde utilizamos como ternologías:
+
+-> AWS para el almacenamiento de datos
+-> node js para el backend
+-> Docker para la ejecución
+-> React js para el frontend
+
+## Documentación por parte de React:
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
