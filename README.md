@@ -99,7 +99,7 @@ Para esta parte, utilizamos el concepto de componentes en React para tener toda 
 
 **Cristian Darío Ceballos Rodríguez**
 
-![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjp4KSwtP7lAhUpD2MBHcmSCNUQjRx6BAgBEAQ&url=http%3A%2F%2Fgifanimadosyfrasescortas.blogspot.com%2F2016%2F07%2Fgif-animados-fuegos-artificiales.html&psig=AOvVaw0YGKipRIK2uPIAdlK-ooxg&ust=1574532281472423)
+![](tenor.gif)
 
 
 
