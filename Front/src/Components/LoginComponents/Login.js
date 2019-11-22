@@ -5,17 +5,51 @@ class Login extends Component {
         super(props);
         this.state = {
             todo: '',
-            products: ''
+            products: '',
+            user: '',
+            password: '',
         };
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChangeUser = this.handleChangeUser.bind(this);
+        this.handleChangePass = this.handleChangePass.bind(this);
 
     }
 
-    handleSubmit(){
+    handleSubmit(e){
+        e.preventDefault();
+        let credentials = {
+            "user": this.state.user,
+            "password": this.state.password
+        };
 
+        fetch('http://localhost:8080/products/login', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(credentials)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if(data){
+                    this.props.history.push("/products");
+                }else{
+                    this.props.history.push("/login");
+                }
+            });
+    }
+
+    handleChangeUser(event){
+        this.setState({
+            user: event.target.value
+        });
+    }
+
+    handleChangePass(event){
+        this.setState({
+            password: event.target.value
+        });
     }
 
     render() {
-        console.log(this.props);
         return (
             <div className="auth-wrapper">
                 <div className="auth-inner">
@@ -23,13 +57,15 @@ class Login extends Component {
                         <h3>¿Ya tienes una cuenta? Entra</h3>
 
                         <div className="form-group">
-                            <label>Correo</label>
-                            <input type="email" className="form-control" placeholder="Digita tu correo" />
+                            <label>Usuario</label>
+                            <input type="text" className="form-control" placeholder="Digita tu correo"
+                                   value={this.state.username} onChange={this.handleChangeUser} />
                         </div>
 
                         <div className="form-group">
                             <label>Contraseña</label>
-                            <input type="password" className="form-control" placeholder="Digita tu contraseña" />
+                            <input type="password" className="form-control" placeholder="Digita tu contraseña"
+                                   value={this.state.password} onChange={this.handleChangePass} />
                         </div>
 
                         <div className="form-group">

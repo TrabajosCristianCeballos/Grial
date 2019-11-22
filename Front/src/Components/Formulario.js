@@ -63,7 +63,7 @@ class TodoForm extends Component {
             </input>
           </div>
           <button type="submit" className="btn btn-primary">
-            Enviar encuestar
+            Enviar encuesta
           </button>
         </form>
       </div>

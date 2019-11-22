@@ -21,28 +21,6 @@
        console.log("IS CONNECTED::: TRUE")
     });
     //////////////
-    // SET UP MySql Connection
-    var mysql = require('mysql');
-    var connection = mysql.createConnection({
-        host     : 'grialdbl.cvzb1l5sgvxf.us-east-1.rds.amazonaws.com',
-        user     : 'xltiagoxl',
-        password : 'santii14',
-        port     : 3306,
-        database : 'griallogin'
-    });
-
-    connection.connect(function(err) {
-        if (err) {
-            console.error('Database connection failed: ' + err.stack);
-            return;
-        }
-
-        console.log('Connected to database.');
-    });
-
-    connection.end();
-
-    /////////////
 
     let app = express();
 
