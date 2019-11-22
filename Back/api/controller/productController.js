@@ -1,5 +1,33 @@
 let Product = require('../domain/productModel');
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+   host: 'grialdbl.cvzb1l5sgvxf.us-east-1.rds.amazonaws.com',
+   user: 'xltiagoxl',
+   password: 'santii14',
+   port: 3306,
+   database : 'griallogin'
+});
 
+connection.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+exports.get_login = function (req, res){
+  var user = "\'"+req.body.user+"\'";
+  var password = "\'"+req.body.password+"\'";
+  var sql = "SELECT * FROM Users WHERE  Nameuser = "+user+" AND UserPassword = "+password;
+  connection.query(sql, function (err, result) {
+    if (err) throw err;
+    if(result[0]){
+      res.send(true);
+    }else{
+      res.send(false);
+    }
+
+  });
+
+}
 //Simple version, without validation or sanitation
 exports.test = function (req, res) {
     Product.find({}, function(err, docs) {

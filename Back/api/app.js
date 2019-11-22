@@ -66,7 +66,7 @@
     app.use('/users', usersRouter);
     app.use('/products', product);
 
-    console.log(product);
+    //console.log(product);
     app.use(function(req, res, next) {
       next(createError(404));
     });
