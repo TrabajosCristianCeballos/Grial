@@ -24,7 +24,8 @@ Azure: Se implementó con MongoDB
 
 Para los servicios Backend los cuales consulta el Frontend que funcionan como intermediario entre el modelo y la vista, decidimos utilizar Express js, que es un framework de node js, para esto, los pasos de creación fueron:
 
-*1) Ejecutar *
+*1) Ejecutar*
 ``` shell script
 npmx create-express-app
 ```
+~Nota: Esto crea los archivos base para ejecutar una aplicación sencilla de Node sobre Express~
