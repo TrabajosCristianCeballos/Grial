@@ -1,6 +1,6 @@
 # Documentación de Grial
 
-**Bases de datos**
+## Bases de datos
 
 AWS: SObre el Amazon Web Services se montó una base de datos relacionada con el motor de MySql propio de la plataforma, en la cual se almacenan los datos de usuario, tales como Nombre, apellido, correo, edad, todo lo relacionado con datos personales.
 
