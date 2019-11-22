@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Login extends Component {
+export default class ISAIAS extends Component {
     render() {
         return (
             <form>
