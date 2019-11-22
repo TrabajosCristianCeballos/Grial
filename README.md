@@ -99,7 +99,7 @@ Para esta parte, utilizamos el concepto de componentes en React para tener toda 
 
 **Cristian Darío Ceballos Rodríguez**
 
-![](tenor.gif)
+![gif](https://tenor.com/view/elmo-fire-gif-5042503)
 
 
 
