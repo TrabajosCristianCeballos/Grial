@@ -20,4 +20,6 @@ router.delete('/:id/delete', product_controller.product_delete);
 
 router.post('/login', product_controller.get_login);
 
+router.post('/register', product_controller.set_register);
+
 module.exports = router;
