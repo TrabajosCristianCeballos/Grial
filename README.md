@@ -28,4 +28,22 @@ Para los servicios Backend los cuales consulta el Frontend que funcionan como in
 ``` shell script
 npmx create-express-app
 ```
-~Nota: Esto crea los archivos base para ejecutar una aplicación sencilla de Node sobre Express~
+*Nota: Esto crea los archivos base para ejecutar una aplicación sencilla de Node sobre Express*
+
+*2) Se procede a crear los modelos de Mongo DB en una carpeta llamada Modelo, además de crear*
+
+*3) Se crean los servicios encargados de hacer las consultas en las respectivas bases de datos con los parámetros necesarios*
+
+*4) Se crea el router que es el encargado de redirigir las peticiones que llegan al servidor*
+
+*5) Configuramos el contexto del servidor entero para ver qué peticiones permite y cuáles no, además se pone en uso los servicios creador previamente*
+
+**NOTA: Toda esta información se puede encontrar en la carpeta de Back.**
+
+
+
+
+
+
+
+
