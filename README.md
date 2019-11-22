@@ -88,11 +88,19 @@ Y este comando te genera una gerarquía de trabajo con componentes y clases, par
 Para esta parte, utilizamos el concepto de componentes en React para tener toda la funcionalidad por separado importando las diferentes librerías con las cuales vamos a trabajar.
 
 **Trabajo de Telemática, 2019-2**
+
 **Grial, v:1.0**
+
 **Universidad Eafit, Pregrado de ingeniería de sistemas**
+
 **Isaias Labrador Sánchez**
+
 **Santiago Valencia Arango**
+
 **Cristian Darío Ceballos Rodríguez**
+
+![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjp4KSwtP7lAhUpD2MBHcmSCNUQjRx6BAgBEAQ&url=http%3A%2F%2Fgifanimadosyfrasescortas.blogspot.com%2F2016%2F07%2Fgif-animados-fuegos-artificiales.html&psig=AOvVaw0YGKipRIK2uPIAdlK-ooxg&ust=1574532281472423)
+
 
 
 
