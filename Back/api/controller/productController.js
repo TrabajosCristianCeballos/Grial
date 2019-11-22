@@ -28,6 +28,28 @@ exports.get_login = function (req, res){
   });
 
 }
+
+exports.set_register = function (req, res){
+  var user = "\'"+req.body.user+"\'";
+  var password = "\'"+req.body.password+"\'";
+  var age = "\'"+req.body.age+"\'";
+  var city = "\'"+req.body.city+"\'";
+  var address = "\'"+req.body.address+"\'";
+  var estrato = "\'"+req.body.estrato+"\'";
+  var email = "\'"+req.body.email+"\'";
+  var values = user+","+age+","+city+","+address+","+email+","+estrato+","+password;
+  var sql = "INSERT INTO Users( Nameuser,UserAge,UserCity,UsersDirection,UsersEmail,Estrato,UserPassword)VALUES("+values+")";
+  connection.query(sql, function (err, result) {
+    if (err) throw err;
+    if(result[0]){
+      res.send(true);
+    }else{
+      res.send(false);
+    }
+
+  });
+
+}
 //Simple version, without validation or sanitation
 exports.test = function (req, res) {
     Product.find({}, function(err, docs) {
