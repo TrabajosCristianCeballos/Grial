@@ -7,56 +7,44 @@ import vino from './Imagenes/vino.png';
 import  carne from './Imagenes/carne.png';
 
 import './App.css';
-import Formulario from './Components/Formulario.js';
-import { todo } from './Productos/todo.json'; //Datos de un back por el momento
-import { productos } from './Productos/productos.json';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "./Components/LoginComponents/Login";
+import Register from "./Components/LoginComponents/Register";
+import ProductsCarousel from "./Components/Products/ProductsCarousel";
+import Graphs from "./Components/Graphs/Graphs/Graphs";
 
 
 class App extends Component{
-    constructor(props){
-        super(props);
-
-        this.state = {
-            todo: '',
-            productos: ''
-        };
-        this.handleAddTodo=this.handleAddTodo.bind(this);
-    }
-
-    handleAddTodo(todo){
-        this.setState({
-            todo: [...this.state.todo, todo]
-        });
-    }
 
   render(){
-    /**const productos = this.state.productos.map((productos, i) => {
-      return (
-        <div className="col-md-4">
-        <div className="card mt-4">
-        <div className="card-header">
-        <div>
-          <h3> { productos.nombre }</h3>
-          <Formulario onAddTodo={this.handleAddTodo} />
-          </div>
-          </div>
-
-          <div className="card-descripcion">
-          <h5>{ productos.descripcion } </h5>
-          </div>
-
-        </div>
-        </div>
-      )
-    });*/
     return (
         <div className="App">
           <div>
             <Router>
+              <div>
+                <div className="Inicio">
+                  <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+                    <div className="container">
+                      <Link className="navbar-brand" to={"/sign-in"}>Grial</Link>
+                      <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav ml-auto">
+                          <li className="nav-item">
+                            <a className="nav-link" href={"/sign-in"}>Ingresar</a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" href={"/sign-up"}>Registrarse</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
               <Switch>
                 <Route path="/login" component={Login}/>
+                <Route path="/sign-up" component={Register}/>
+                <Route path="/products" component={ProductsCarousel}/>
+                <Route path="/charts" component={Graphs}/>
                 <Route path="/" component={Login}/>
               </Switch>
             </Router>

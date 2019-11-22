@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Inicio from './Components/Inicio';
 import * as serviceWorker from './serviceWorker';
-//Importando brouser
-import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
